@@ -1,17 +1,49 @@
 <HTML>
 	<HEAD>
 		<TITLE>IPN</TITLE>
-		<meta name="EnIPN" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 	<style>
+			body{
+				font-family: arial;
+				margin: 0;
+				
+			}
+			header{
+				display: flex;
+				min-height: 90px;
+				background-color: darkred;
+				color: #FFFFFF;
+				font-size: 10px;
+				justify-content: center;
+				align-items: center;
+			}
+			.logo{
+				display: flex;
+				align-items: center;
+
+			}
+			.logo-img1{
+				height: 100px;
+				margin-right: 40px;
+			}
+			.logo-img2{
+				height: 70px;
+				margin-left: 40px;
+			}
+			@media (max-width: 700px) {
+				header{
+					flex-direction: row;
+				}
+			}
+		</style>
 	</HEAD>
-	<BODY bgcolor=darkred>
-		<TABLE>
-			<TR>
-			<TH style="width: 150px" align=left><IMG SRC=ipn.png WIDTH=100% HEIGHT=100%></TH>
-			<TH style="width: 1000px" align=center valign=middle>
-				<font color=white face=arial><B>Instituto Politécnico Nacional <br> Centro de Estudios Científicos y Tecnológicos No. 9 <br> “Juan de Dios Bátiz”</font></B>
-			</TH>
-			<TH align=right><IMG SRC=batiz.png WIDTH=60% HEIGHT=60%></TH>
-			</TR>
-		</TABLE>
+	<BODY>
+		<header>
+			<a class="logo">
+				<IMG SRC="ipn.png" alt=IPN class="logo-img1">
+				<center><h2>Instituto Politécnico Nacional <br> Centro de Estudios Científicos y Tecnológicos No. 9 <br> “Juan de Dios Bátiz”</h2></center>
+				<IMG SRC="batiz.png" alt=BATIZ class="logo-img2">
+			</a>
+		</header>
 	</BODY>
 </HTML>
